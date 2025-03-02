@@ -15,10 +15,10 @@ class DatabaseSeeder extends Seeder
      */
     public function run(): void
     {
-        User::factory(5)->create();
+        User::factory(1)->create();
         $this->call(CategoriaSeeder::class);
         $this->call(PrecioSeeder::class);
-        Inmueble::factory(10)->create(); 
+        Inmueble::factory(1)->create(); 
       
 
         // User::factory()->create([
